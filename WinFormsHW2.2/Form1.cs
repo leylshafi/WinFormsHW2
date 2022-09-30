@@ -7,114 +7,15 @@ namespace WinFormsHW2._2
             InitializeComponent();
         }
         char c;
-        private void Zero_Click(object sender, EventArgs e)
+        private void btnN_Click(object sender, EventArgs e)
         {
-
-            Answer.Text = Answer.Text + "0";
-
-        }
-
-        private void One_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "1";
-            }
+            if (!((sender as Button)?.Text == "." && Answer.Text.Length == 0))
+                Answer.Text += (sender as Button)?.Text;
             else
-            {
-                Answer.Text = Answer.Text + "1";
-            }
-        }
-        private void Two_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "2";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "2";
-            }
-        }
-        private void Three_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "3";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "3";
-            }
-        }
-        private void Four_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "4";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "4";
-            }
+                Answer.Text += "0.";
         }
 
-        private void Five_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "5";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "5";
-            }
-        }
-        private void Six_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "6";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "6";
-            }
-        }
-        private void Seven_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "7";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "7";
-            }
-        }
-        private void Eight_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "8";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "8";
-            }
-        }
-        private void Nine_Click(object sender, EventArgs e)
-        {
-            if (Answer.Text == "0" && Answer.Text != null)
-            {
-                Answer.Text = "9";
-            }
-            else
-            {
-                Answer.Text = Answer.Text + "9";
-            }
-        }
-
+        
 
         private void Equal_Click(object sender, EventArgs e)
         {
